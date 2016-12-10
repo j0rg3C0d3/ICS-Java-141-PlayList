@@ -1,13 +1,8 @@
-/*Jorge Fajardo
- * ICS 141- Programming Objects
- * 10/21/2016
- * Assigment: 6
- */
 public class PlayList {
 
 	private int maxNumOfSongs = 0;
 	private int currentNumOfSongs = 0;
-	private Song[] songList;// = new Song[5];
+	private Song[] songList;
 
 	public PlayList(int _maxNumOfSongs) {
 		this.maxNumOfSongs = _maxNumOfSongs;
@@ -28,7 +23,6 @@ public class PlayList {
 		this.currentNumOfSongs++;
 	}
 
-	// this returns a song based on an int/ possition.
 	public Song getSong(int _possition) {
 		Song aSong;
 		if (songList != null) {
@@ -38,7 +32,6 @@ public class PlayList {
 		return null;
 	}
 
-	// takes a "string" name of song and returns possition on list;
 	public int getSongPosition(String _title) {
 		for (int i = 0; i < this.currentNumOfSongs; i++) {
 			if (this.songList[i] != null) {
