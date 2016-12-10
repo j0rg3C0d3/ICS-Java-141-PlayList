@@ -1,8 +1,5 @@
 public class Driver {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		// 1
 		PlayList newList = new PlayList(5);
