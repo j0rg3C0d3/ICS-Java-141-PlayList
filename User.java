@@ -1,8 +1,3 @@
-/*Jorge Fajardo
- * ICS 141- Programming Objects
- * 10/21/2016
- * Assigment: 6
- */
 public class User {
 	private String name = "";
 	private PlayList favoriteSongs;
@@ -25,7 +20,6 @@ public class User {
 		return (this.favoriteSongs);
 	}
 
-	// return the SONG Object of the song with given title.
 	public Song getSong(String _title) {
 		Song outSong = null;
 		for (int i = 0; i < this.favoriteSongs.getCurrentNumSongs(); i++) {
@@ -42,8 +36,6 @@ public class User {
 		favoriteSongs.addSong(_title, _artist);
 	}
 
-	// return number of songs in the play list that are authored by the input
-	// artist name
 	public int artistSongCount(String _artist) {
 		int songCounter = 0;
 
@@ -59,12 +51,11 @@ public class User {
 		return songCounter;
 	}
 
-	// setters
+	
 	public void setName(String _name) {
 		this.name = _name;
 	}
 
-	// getters
 	public String getName() {
 		return (name);
 	}
