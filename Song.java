@@ -1,9 +1,3 @@
-/*Jorge Fajardo
- * ICS 141- Programming Objects
- * 10/21/2016
- * Assigment: 6
- */
-
 public class Song {
 	private String title = "";
 	private String artist = "";
